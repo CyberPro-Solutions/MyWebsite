@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberPro Solutions</title>
+    <title>Cybersecurity & IT Services</title>
     <style>
         /* General Reset */
         * {
@@ -120,7 +120,6 @@
         .services .service {
             display: flex;
             align-items: center;
-            transition: transform 0.3s;
         }
 
         .services .service img {
@@ -128,6 +127,10 @@
             margin-right: 20px;
             border-radius: 50%;
             border: 2px solid #00ff99;
+        }
+
+        .about .content p {
+            margin-bottom: 20px;
         }
 
         footer {
@@ -160,28 +163,56 @@
     </style>
 </head>
 <body>
-
-<div class="container">
-    <h1>Cybersecurity Portfolio</h1>
-    
-    <div class="project">
-        <h2>Project 1: Network Security</h2>
-        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla nisi id libero congue, nec semper purus accumsan.</p>
-        <p>Skills: Firewall configuration, Intrusion Detection Systems (IDS), Network Monitoring</p>
+    <header>
+        <h1>Cybersecurity & IT Services</h1>
+        <p>Your Security, Our Priority</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="showcase" id="home">
+        <h1>Secure Your Digital World</h1>
+        <p>Advanced cybersecurity solutions for your business</p>
+    </section>
+    <div class="container">
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="service1.jpg" alt="Service 1">
+                <div>
+                    <h3>Network Security</h3>
+                    <p>Protect your network from threats with our advanced security measures.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Service 2">
+                <div>
+                    <h3>Data Protection</h3>
+                    <p>Ensure the safety of your data with our comprehensive protection strategies.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="Service 3">
+                <div>
+                    <h3>IT Support</h3>
+                    <p>Reliable IT support services to keep your business running smoothly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <div class="content">
+                <p>We are a leading cybersecurity and IT services company dedicated to providing top-notch security solutions to businesses of all sizes. Our team of experts is committed to ensuring the safety and integrity of your digital assets.</p>
+                <p>With years of experience in the industry, we leverage the latest technologies and best practices to deliver reliable and effective security services. Your trust is our top priority, and we work tirelessly to protect your business from cyber threats.</p>
+            </div>
+        </section>
     </div>
-
-    <div class="project">
-        <h2>Project 2: Penetration Testing</h2>
-        <p>Description: Donec ullamcorper mattis nunc, nec tincidunt mi laoreet at. Vivamus volutpat, odio eget tristique rhoncus, odio est semper nunc, ut dictum nisl justo id lectus.</p>
-        <p>Skills: Vulnerability assessment, Exploitation techniques, Reporting</p>
-    </div>
-
-    <div class="project">
-        <h2>Project 3: Security Awareness Training</h2>
-        <p>Description: Integer gravida risus vitae enim fringilla, vel suscipit lorem condimentum. Aliquam erat volutpat.</p>
-        <p>Skills: Training development, Phishing simulation, Compliance auditing</p>
-    </div>
-</div>
-
+    <footer id="contact">
+        <p>&copy; 2024 Cybersecurity & IT Services. All Rights Reserved.</p>
+        <p>Contact us: info@cybersecurity-itservices.com</p>
+    </footer>
 </body>
 </html>

@@ -5,35 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberPro Solutions</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #0d0d0d;
+            color: #e6e6e6;
         }
-        h1 {
+
+        header {
+            background: linear-gradient(90deg, #1a1a1a, #0d0d0d);
+            color: #00ff99;
+            padding: 20px 0;
             text-align: center;
-            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-        .project {
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #00cc88;
+        }
+
+        nav {
+            background: #1a1a1a;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #00ff99;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #00ff99;
+            color: #0d0d0d;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .showcase {
+            background: url('cybersecurity-bg.jpg') no-repeat center center/cover;
+            color: #00ff99;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .showcase h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #000;
+        }
+
+        .showcase p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px #000;
+        }
+
+        .services,
+        .about {
+            padding: 40px 0;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
+
+        .services .service,
+        .about .content {
+            background: #0d0d0d;
+            padding: 20px;
             margin-bottom: 20px;
-            padding: 15px;
             border-radius: 5px;
-            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .project h2 {
-            margin-top: 0;
+
+        .services .service:hover,
+        .about .content:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
         }
-        .project p {
-            margin-bottom: 0;
+
+        .services h2,
+        .about h2 {
+            margin-bottom: 20px;
+            color: #00ff99;
+            text-transform: uppercase;
+        }
+
+        .services .service {
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .services .service img {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 2px solid #00ff99;
+        }
+
+        footer {
+            background: #0d0d0d;
+            color: #00ff99;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .services .service {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .services .service img {
+                margin: 0 0 10px 0;
+            }
         }
     </style>
 </head>
